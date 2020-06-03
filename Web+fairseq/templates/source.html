@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tiger</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="../static/reset.css">
+    <script type="text/javascript" src="../static/success.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="wp">
+            <img src="../static/images/tiger.jpg" alt="author:tiger" class="image_tiger">
+        </div>
+        
+        <div class="wp">
+            <img src="../static/images/NiuTrans.jpg" alt="" class="image_niu">
+        </div>
+    </header>
+
+    <!-- 主体(下拉列表区) -->
+    <form class="source_form" action="http://127.0.0.1:5000/translator/" method="get">
+    <div class="opdown">
+        <div class="wp clearfix">
+            <div class="left">
+
+                <select name="src_lan">
+                    <option value="no_choice">请选择源语言</option>
+                    <option value="en">英文</option>
+                    <option value="de">德文</option>
+                    <option value="fr">法文</option>
+                </select>
+                <div style="height: 50px;"></div>
+                <div class="leftbox">
+                    <div class="mainbox">
+                        <textarea name="sentence" class="input__original__area" id="inputarea"
+                            style="font-size: 24px; line-height: 30px; height: auto; overflow: auto;"
+                            placeholder="请输入你要翻译的文字"></textarea>
+                    </div>
+                </div>
+                <div><input type="submit" value="translate" class="translate_button" onclick=""></div>
+            </div>
+
+            <div class="right">
+                <select name="tar_lan">
+                    <option value="no_choice">请选择目标语言</option>
+                    <option value="2en">英文</option>
+                    <option value="2de">德文</option>
+                    <option value="2fr">法文</option>
+                </select>
+
+                <div style="height: 50px;"></div>
+                <div class="rightbox">
+                    <div class="mainbox">
+                        <div class="transarea">这里是翻译完成的内容</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div class="footer">
+        <p>© 2020 Tiger NEU 版权所有</p>
+    </div>
+</body>
+
+</html>
